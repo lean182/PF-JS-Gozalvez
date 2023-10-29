@@ -167,5 +167,3 @@ function borrarHistorial() {
 document
   .getElementById("btn-borrarHistorialCompleto")
   .addEventListener("click", borrarHistorial);
-
-
