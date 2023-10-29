@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon" />
+    <title>Calculadora</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>Calculadora</h1>
+      </header>
+      <main>
+        <div class="calculadora">
+          <input type="text" id="pantalla" readonly />
+          <div class="botones">
+            <button id="btn-limpiarPantalla">AC</button>
+            <button id="btn-borrarUltimaEntrada">C</button>
+            <button class="btn-agregarALaPantalla" data-valor="%">%</button>
+            <button class="btn-agregarALaPantalla" data-valor="/">÷</button>
+
+            <button class="btn-agregarALaPantalla" data-valor="7">7</button>
+            <button class="btn-agregarALaPantalla" data-valor="8">8</button>
+            <button class="btn-agregarALaPantalla" data-valor="9">9</button>
+            <button class="btn-agregarALaPantalla" data-valor="*">x</button>
+
+            <button class="btn-agregarALaPantalla" data-valor="4">4</button>
+            <button class="btn-agregarALaPantalla" data-valor="5">5</button>
+            <button class="btn-agregarALaPantalla" data-valor="6">6</button>
+            <button class="btn-agregarALaPantalla" data-valor="-">-</button>
+
+            <button class="btn-agregarALaPantalla" data-valor="1">1</button>
+            <button class="btn-agregarALaPantalla" data-valor="2">2</button>
+            <button class="btn-agregarALaPantalla" data-valor="3">3</button>
+            <button class="btn-agregarALaPantalla" data-valor="+">+</button>
+
+            <button class="btn-agregarALaPantalla" data-valor="0">0</button>
+            <button class="btn-agregarALaPantalla" data-valor=".">.</button>
+            <button id="btn-alternarParentesis">()</button>
+            <button id="btn-calcularResultado">=</button>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section>
+      <header>
+        <div id="historial">
+          <h2>Historial de Ecuaciones</h2>
+        </div>
+      </header>
+      <main>
+        <ul id="lista-historial" class="historial-con-scroll"></ul>
+      </main>
+    </section>
+    <footer>
+      <div>
+        <section>
+          <p>© Copyright 2023 Gozalvez Leandro</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
