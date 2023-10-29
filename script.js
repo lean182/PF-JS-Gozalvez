@@ -34,7 +34,7 @@ class Calculadora {
     let operandos = expr.split(/[\+\-\*\/]/).map((o) => parseFloat(o));
     let operaciones = expr.match(/[\+\-\*\/]/g) || [];
 
-    // Realizar multiplicación y división
+    // Realizar operaciones de multiplicación y división
     while (operaciones.includes("*") || operaciones.includes("/")) {
       let i = operaciones.findIndex((o) => o === "*" || o === "/");
       operandos[i] =
@@ -45,7 +45,7 @@ class Calculadora {
       operaciones.splice(i, 1);
     }
 
-    // Realizar suma y resta
+    // Realizar operaciones de suma y resta
     while (operaciones.includes("+") || operaciones.includes("-")) {
       let i = operaciones.findIndex((o) => o === "+" || o === "-");
       operandos[i] =
@@ -187,3 +187,11 @@ function borrarHistorial() {
 document
   .getElementById("btn-borrarHistorialCompleto")
   .addEventListener("click", borrarHistorial);
+
+// Actualización de la Pantalla Asincronamente
+function actualizarPantallaAsincronamente(valor) {
+  setTimeout(() => {
+    this.entradaActual += valor;
+    this.pantalla.value = this.entradaActual;
+  }, 500);
+}
