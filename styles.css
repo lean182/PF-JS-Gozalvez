@@ -1,3 +1,4 @@
+/* Estilos globales */
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -7,6 +8,7 @@ body {
   display: flex;
 }
 
+/* Estilos para secciones */
 section {
   background-color: #f0ebe5;
   padding: 10px;
@@ -16,6 +18,7 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilos para encabezados de sección */
 header {
   background-color: #333;
   color: #f0ebe5;
@@ -26,12 +29,14 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilos para encabezado principal */
 h1 {
   font-size: 24px;
   margin: 0;
   padding: 10px;
 }
 
+/* Estilos para contenido principal */
 main {
   text-align: center;
   justify-content: center;
@@ -44,6 +49,7 @@ main {
   border-radius: 5px;
 }
 
+/* Estilos para la pantalla de la calculadora */
 #pantalla {
   text-align: right;
   font-weight: bold;
@@ -57,6 +63,7 @@ main {
   margin-bottom: 10px;
 }
 
+/* Estilos para el contenedor de botones */
 .botones {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -67,6 +74,7 @@ main {
   border-radius: 5px;
 }
 
+/* Estilos para botones */
 button {
   width: 100%;
   height: 50px;
@@ -87,11 +95,13 @@ button:hover {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Estilos para el historial con scroll */
 .historial-con-scroll {
   max-height: 365px;
   overflow-y: auto;
 }
 
+/* Estilos para la lista de historial */
 #lista-historial {
   color: #f0ebe5;
   text-align: left;
@@ -99,15 +109,18 @@ button:hover {
   min-height: 365px;
 }
 
+/* Estilos para el modo oscuro */
 .modo-oscuro {
   background-color: #333;
 }
 
+/* Estilos para el pie de página */
 footer section p {
   font-weight: bold;
   text-align: center;
 }
 
+/* Estilos para el interruptor de modo oscuro */
 footer section span {
   font-weight: bold;
   position: relative;
@@ -151,6 +164,7 @@ footer section span {
   transform: translateX(26px);
 }
 
+/* Estilos para el botón de borrar historial */
 #contenedorBoton {
   display: flex;
   justify-content: center;
@@ -166,4 +180,23 @@ footer section span {
   font-weight: bold;
   width: auto;
   height: auto;
+}
+
+/* Estilos para la barra desplazadora del historial cuando está lleno */
+.historial-con-scroll {
+  max-height: 365px;
+  overflow-y: auto;
+}
+
+.historial-con-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.historial-con-scroll::-webkit-scrollbar-thumb {
+  background: #87575c;
+  border-radius: 6px;
+}
+
+.historial-con-scroll::-webkit-scrollbar-track {
+  background: #d1dfd1;
 }

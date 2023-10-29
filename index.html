@@ -9,14 +9,19 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
+    <!-- Sección principal -->
     <section>
+      <!-- Encabezado de la calculadora -->
       <header>
         <h1>Calculadora</h1>
       </header>
+      <!-- Contenido principal -->
       <main>
+        <!-- Calculadora -->
         <div class="calculadora">
           <input type="text" id="pantalla" readonly />
           <div class="botones">
+            <!-- Botones de la calculadora -->
             <button id="btn-limpiarPantalla">AC</button>
             <button id="btn-borrarUltimaEntrada">C</button>
             <button class="btn-agregarALaPantalla" data-valor="%">%</button>
@@ -45,25 +50,32 @@
         </div>
       </main>
     </section>
+    <!-- Sección de historial -->
     <section>
+      <!-- Encabezado del historial de ecuaciones -->
       <header>
         <div id="historial">
           <h2>Historial de Ecuaciones</h2>
         </div>
       </header>
+      <!-- Contenido del historial de ecuaciones -->
       <main>
         <ul id="lista-historial" class="historial-con-scroll"></ul>
       </main>
     </section>
+    <!-- Pie de página -->
     <footer>
       <div>
+        <!-- Sección de derechos de autor -->
         <section>
           <p>© Copyright 2023 Gozalvez Leandro</p>
         </section>
+        <!-- Sección del interruptor (switch) de modo oscuro -->
         <section class="switch">
           <input type="checkbox" id="switch-modo-oscuro" />
           <span class="slider">Modo Oscuro</span>
         </section>
+        <!-- Sección del botón para borrar el historial completo -->
         <section id="contenedorBoton">
           <button id="btn-borrarHistorialCompleto">
             Borrar Historial Completo
