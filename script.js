@@ -140,3 +140,32 @@ class Calculadora {
 }
 
 document.addEventListener("DOMContentLoaded", () => new Calculadora());
+
+const switchModoOscuro = document.getElementById("switch-modo-oscuro");
+let modoOscuroActivado = false;
+
+switchModoOscuro.addEventListener("change", () => {
+  modoOscuroActivado = switchModoOscuro.checked;
+  const body = document.body;
+
+  if (modoOscuroActivado) {
+    body.classList.add("modo-oscuro");
+  } else {
+    body.classList.remove("modo-oscuro");
+  }
+});
+
+function borrarHistorial() {
+  const listaHistorial = document.getElementById("lista-historial");
+  listaHistorial.innerHTML = "";
+
+  localStorage.clear();
+
+  window.location.reload();
+}
+
+document
+  .getElementById("btn-borrarHistorialCompleto")
+  .addEventListener("click", borrarHistorial);
+
+

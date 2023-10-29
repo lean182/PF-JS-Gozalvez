@@ -96,4 +96,9 @@ button:hover {
   color: #f0ebe5;
   text-align: left;
   font-size: 20px;
+  min-height: 365px;
+}
+
+.modo-oscuro {
+  background-color: #333;
 }
